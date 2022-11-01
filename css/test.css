@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height:100vh;
+    background: #EDD6D7;
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+#header {
+    font-size: 25px;
+    background-color: #244564;
+    color: #F5D6D7;
+    text-align: center;
+    padding: 20px;
+}
+.icoBimage::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    background-image:url(../images/spannerP.png);
+    background-size: contain;
+    vertical-align: middle;
+    padding-right: 5px;
+    background-repeat: no-repeat;
+}
+
+#footer {
+    font-size: 10px;
+    background-color: #244564;
+    color: #F5D6D7;
+    text-align: right;
+    padding: 20px;
+}
+
+#main-colour {
+    background: #EDD6D7;
+    padding: 0.5em;
+    font-size: 15px;
+    color:#676464;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div {
+    display: block;
+}
+
+h1 {
+    color: #145571;
+    font-size: 15px;
+    text-align: center;
+    padding: 0.5em 0;
+    border-top: solid 3px #145571;
+    border-bottom: solid 3px #145571;
+    margin-bottom: 30px;
+}
+a:visited {
+    color: inherit;
+}
+
+.center{
+    display: block;
+    text-align: center;
+}
+
+.display-style {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+textarea.text-box {
+    width: 80%;
+    height: 70px;
+    color:#676464;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #ccc inset;
+    -webkit-appearance: none;
+}
+textarea.text-box:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(251,223,132) inset;
+}
+
+input.min-box {
+    height: 2em;
+    width: 50px;
+    padding: 0 5px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #ccc inset;
+    -webkit-appearance: none;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color:#676464;
+    ime-mode: disabled;
+}
+input.min-box:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(251,223,132) inset;
+}
+
+.comma-box {
+    height: 2em;
+    width: 30%;
+    padding: 0 5px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #ccc inset;
+    -webkit-appearance: none;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color:#676464;
+    margin-bottom: 28px;
+}
+
+.button {
+    color: #D6DCCF;
+    background-color: #BE646C;
+    border: 2px dashed #145571;;
+    padding: 10px 40px;
+    font-weight: bold;
+    border-radius: 100vh;
+}
+
+button {
+    color: #D6DCCF;
+    background-color: #BE646C;
+    border: 2px dashed #145571;;
+    padding: 10px 40px;
+    font-weight: bold;
+    border-radius: 100vh;
+}
+
+label{
+    box-shadow:0 3px 5px rgba(0,0,0,.2);
+    padding:15px;
+    background:white;
+    width:260px;
+    display:inline-block;
+    position:relative;
+    margin-bottom: 30px;
+  }
+  
+  select{
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    font-size:16px;
+    color:#676464;
+    border-radius:0;
+    width:275px;
+    z-index:2;
+    background:transparent;
+  }
+  
+  label:after{
+    content:"\25bc";
+    font-size:16px;
+    color:white;
+    background:#f3a1a1;
+    width:42px;
+    text-align:center;
+    line-height:3.2em;
+    top:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+    pointer-events:none;
+  }
+  
+  option{
+    border-bottom:1px solid #eaeaea;
+    border-left:3px solid white;
+    appearance:none;
+  }
+  
+  option:hover{
+    background-color:white;
+    border-left:3px solid #f3a1a1;
+  
+  }
+
+/* 生成結果 */
+div.answer-count {
+    margin: 20px;
+    padding: 20px;
+    color: #B12057;
+    text-align: center;
+}
+
+.answer textarea {
+    width: 80%;
+    height: 70px;
+    color:#676464;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #ccc inset;
+    -webkit-appearance: none;
+}
+.answer textarea:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(251,223,132) inset;
+}
+.answer p {
+    text-align: left;
+    margin-left: 58px;
+}

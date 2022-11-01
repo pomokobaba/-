@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>動作確認ツール</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/spanners.png">
+  </head>
+
+  <body>
+    <header id="header">
+      <p class="icoBimage">動作確認用ツール</p>
+    </header>
+
+    <div id="main-colour">
+      <div class="display-style">
+          <h1>文字数カウント</h1>
+          <textarea class="text-box" id="text" type="text" value="" ></textarea>
+          <input class="button" type="button" value="数を数える" onclick="countNumber()" />
+          <div class="answer-count" id="countNumberAnswer"></div>
+      </div>
+      <div class="display-style">
+          <h1>文字の生成</h1>
+          <div>
+            <label>
+              <select name="city" id="detaTyep">
+                  <option value="zenkaku">この文章はダミーです。</option>
+                  <option value="kana">ダミーテキスト。</option>
+                  <option value="emoji">🙂👍🙃😊🙁🤣🤑</option>
+                  <option value="hankaku">dsAG5lkm75WoKfBGHTY44</option>
+                  <option value="baba">馬場＿動作確認ダミーデータ。</option>
+              </select>
+            </label>
+            <input class="min-box" id="textNo" type="number" value="" /><span>文字数</span>
+          </div>
+          <input class="button" type="button" value="作る" onclick="createNumber()" />
+          <div class="answer">
+            <p>▶ 生成結果</p>
+            <textarea id="createNumberAnswer"></textarea>
+          </div>
+      </div>
+      <div class="display-style">
+        <h1>カンマ区切りの文字生成</h1>
+        <p>作成イメージ：文章1,文章2,文章3,文章4,文章5,文章6</p>
+        <div>
+          <span>文章：</span><input class="comma-box" id="textComma" type="text" value="" />
+          <input class="min-box" id="createNo" type="number" value="" /><span>数</span>
+        </div>
+        <input class="button" type="button" value="作る" onclick="createComma()" />
+        <div class="answer">
+          <p>▶ 生成結果</p>
+          <textarea id="createCommaAnswer"></textarea>
+        </div>
+      </div>
+      <div class="display-style">
+        <h1>画像のリサイズ</h1>
+        高さ：<input class="min-box" id="height" type="number" value="" />
+        × 幅：<input class="min-box" id="width" type="number" value="" />
+        ファイル：<input class="resize" type="file" accept="image/jpeg,image/png,image/gif" onchange="fileup(this)" />
+        <div>
+          <img src="" id="img" />
+        </div>
+        <button><a id="download" href="#" download="dl.png">ダウンロード</a></button>
+      </div>
+    
+      <div class="display-style">
+        <h1>SQL成形</h1>
+        <p>近日実装予定</p>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="footer-02">
+          <p class="footer-copy">© Copyright 2022 動作確認用ツール</p>
+      </div>
+      </div>
+    </footer>
+
+    <script src="js/test.js"></script>
+
+  </body>
+  
+
+</html>

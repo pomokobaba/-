@@ -1,0 +1,2 @@
+result:この文章は
+result:5
